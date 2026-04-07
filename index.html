@@ -15,41 +15,96 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <!-- faz o site se adaptar a celulares (responsividade)-->
 
-     <meta name="description" content="Aplicativo de Monitoramento para Sustentabilidade no Campo">
-    <title>Monitoramento Sustentabilidade no Campo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Agro Forte | Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Aplicativo de Monitoramento para Sustentabilidade no Campo</h1>
-            <p>Monitorando práticas sustentáveis para um futuro mais verde e eficiente.</p>
-        </div>
-    </header>
-    
-    <section class="features">
-        <div class="container">
-            <h2>Funcionalidades</h2>
-            <div class="feature">
-                <h3>Monitoramento de Recursos Naturais</h3>
-                <p>Acompanhe o uso de água, solo e energia nas propriedades agrícolas.</p>
-            </div>
-            <div class="feature">
-                <h3>Análise de Impacto Ambiental</h3>
-                <p>Relatórios detalhados sobre os impactos das práticas agrícolas no meio ambiente.</p>
-            </div>
-            <div class="feature">
-                <h3>Gestão de Resíduos</h3>
-                <p>Ferramentas para controlar e reduzir a produção de resíduos na fazenda.</p>
-            </div>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Monitoramento Sustentável no Campo | Todos os direitos reservados</p>
+    <header id="home">
+        <nav class="navbar">
+            <div class="logo">AGRO<span>FORTE</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="reveal">O Equilíbrio que Alimenta o <span>Mundo</span></h1>
+                <p class="reveal">Unindo alta produtividade e preservação ambiental através da tecnologia de ponta. O futuro do agro é verde, digital e consciente.</p>
+                <a href="#tecnologia" class="btn-cta reveal">Saiba Mais</a>
+            </div>
+        </section>
+
+        <section id="tecnologia" class="highlights">
+            <div class="container">
+                <div class="card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Tecnologia de Ponta</h3>
+                    <p>Monitoramento via satélite e drones para otimização em tempo real da colheita.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Preservação Ambiental</h3>
+                    <p>Compromisso com o desmatamento zero e a regeneração de biomas nativos.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Eficiência Hídrica</h3>
+                    <p>Sistemas de irrigação inteligente que reduzem o desperdício de água em até 40%.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sustentabilidade" class="content-section">
+            <div class="container grid-2">
+                <div class="text-content">
+                    <h2>Dados que Protegem a Terra</h2>
+                    <p>O agronegócio moderno não caminha sem a ciência de dados. Através da análise de solo digitalizada, conseguimos aplicar insumos com precisão cirúrgica, reduzindo o impacto químico e maximizando a saúde das plantações.</p>
+                    <div class="stats" id="stats-section">
+                        <div class="stat-item">
+                            <h4 class="counter" data-target="35">0</h4><span>%</span>
+                            <p>Menos CO2</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="counter" data-target="92">0</h4><span>%</span>
+                            <p>Eficácia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=800&q=80" alt="Tecnologia no Campo">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Agro Forte</h4>
+                <p>Cultivando o amanhã, hoje.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
+        <p class="copyright">&copy; 2026 Agro Forte - Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-    
