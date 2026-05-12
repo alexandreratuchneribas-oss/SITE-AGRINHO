@@ -1,110 +1,104 @@
-
 <!DOCTYPE html>
-<!--Define que o documento está em HTML5-->
-
 <html lang="pt-BR">
-  <!--Define o idioma como português do Brasil-->
-  
-  <head>
-
-    <!--Configurações invisíveis da página-->
-    
-    <meta charset="UTF-8">
-    <!--Permite usar acentos e carcteres especiais-->
-    
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <!-- faz o site se adaptar a celulares (responsividade)-->
-
-    <title>Agro Forte | Futuro Sustentável</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Forte – Futuro Sustentável</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-    <header id="home">
-        <nav class="navbar">
-            <div class="logo">AGRO<span>FORTE</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
+<header>
+    <h1>Agro Forte – Futuro Sustentável</h1>
+    <p>Equilíbrio entre produção agrícola e meio ambiente</p>
+</header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="reveal">O Equilíbrio que Alimenta o <span>Mundo</span></h1>
-                <p class="reveal">Unindo alta produtividade e preservação ambiental através da tecnologia de ponta. O futuro do agro é verde, digital e consciente.</p>
-                <a href="#tecnologia" class="btn-cta reveal">Saiba Mais</a>
-            </div>
-        </section>
+<nav>
+    <ul>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#metodologia">Metodologia</a></li>
+        <li><a href="#simulacao">Simulação</a></li>
+        <li><a href="#conclusao">Conclusão</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+</nav>
 
-        <section id="tecnologia" class="highlights">
-            <div class="container">
-                <div class="card">
-                    <i class="fas fa-microchip"></i>
-                    <h3>Tecnologia de Ponta</h3>
-                    <p>Monitoramento via satélite e drones para otimização em tempo real da colheita.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Preservação Ambiental</h3>
-                    <p>Compromisso com o desmatamento zero e a regeneração de biomas nativos.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-tint"></i>
-                    <h3>Eficiência Hídrica</h3>
-                    <p>Sistemas de irrigação inteligente que reduzem o desperdício de água em até 40%.</p>
-                </div>
-            </div>
-        </section>
+<section id="introducao">
+    <h2>Introdução</h2>
+    <p>O projeto "Agro Forte, Futuro Sustentável" visa unir tecnologia e sustentabilidade, criando uma ferramenta que permite monitorar a umidade, nitrogênio e fosfato do solo em diferentes áreas agrícolas. Isso ajuda os produtores a tomar decisões conscientes sobre plantio, irrigação e adubação, mantendo o equilíbrio com o meio ambiente.</p>
+    <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/farming-1238258_1280.jpg" alt="Agricultura Sustentável" class="imagem">
+</section>
 
-        <section id="sustentabilidade" class="content-section">
-            <div class="container grid-2">
-                <div class="text-content">
-                    <h2>Dados que Protegem a Terra</h2>
-                    <p>O agronegócio moderno não caminha sem a ciência de dados. Através da análise de solo digitalizada, conseguimos aplicar insumos com precisão cirúrgica, reduzindo o impacto químico e maximizando a saúde das plantações.</p>
-                    <div class="stats" id="stats-section">
-                        <div class="stat-item">
-                            <h4 class="counter" data-target="35">0</h4><span>%</span>
-                            <p>Menos CO2</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4 class="counter" data-target="92">0</h4><span>%</span>
-                            <p>Eficácia</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="image-content">
-                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=800&q=80" alt="Tecnologia no Campo">
-                </div>
-            </div>
-        </section>
-    </main>
+<section id="objetivos">
+    <h2>Objetivos</h2>
+    <h3>Geral:</h3>
+    <p>Desenvolver uma solução prática que mostre como monitorar o solo e melhorar a sustentabilidade agrícola.</p>
+    <h3>Específicos:</h3>
+    <ul>
+        <li>Mostrar dados de umidade, nitrogênio e fosfato do solo.</li>
+        <li>Simular um aplicativo de monitoramento para produtores.</li>
+        <li>Visualizar dados de forma clara através de gráficos.</li>
+        <li>Conscientizar sobre agricultura sustentável.</li>
+    </ul>
+    <img src="https://cdn.pixabay.com/photo/2018/08/02/11/11/farmer-3575302_1280.jpg" alt="Produtor no campo" class="imagem">
+</section>
 
-    <footer id="contato">
-        <div class="footer-container">
-            <div class="footer-info">
-                <h4>Agro Forte</h4>
-                <p>Cultivando o amanhã, hoje.</p>
-            </div>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-        <p class="copyright">&copy; 2026 Agro Forte - Todos os direitos reservados.</p>
-    </footer>
+<section id="metodologia">
+    <h2>Metodologia</h2>
+    <ol>
+        <li>Coleta de dados simulados de diferentes áreas agrícolas.</li>
+        <li>Desenvolvimento de gráficos para exibir os valores do solo.</li>
+        <li>Simulação interativa para mostrar como o aplicativo funciona.</li>
+        <li>Registro dos resultados e análise de cada área.</li>
+    </ol>
+    <img src="https://cdn.pixabay.com/photo/2016/11/29/12/54/laboratory-1869233_1280.jpg" alt="Análise de solo" class="imagem">
+</section>
 
-    <script src="script.js"></script>
+<section id="simulacao">
+    <h2>Simulação Interativa</h2>
+    <p>Escolha uma área de cultivo para ver os dados do solo:</p>
+    <select id="selectArea">
+        <option value="0">Área 1</option>
+        <option value="1">Área 2</option>
+        <option value="2">Área 3</option>
+        <option value="3">Área 4</option>
+        <option value="4">Área 5</option>
+    </select>
+
+    <div id="dadosArea">
+        <h3>Dados da Área Selecionada</h3>
+        <p id="umidade">Umidade: -- %</p>
+        <p id="nitrogenio">Nitrogênio: -- mg/kg</p>
+        <p id="fosfato">Fosfato: -- mg/kg</p>
+        <p id="status">Status: --</p>
+    </div>
+
+    <canvas id="graficoArea" width="600" height="300"></canvas>
+    <img src="https://cdn.pixabay.com/photo/2017/02/01/19/32/technology-2037917_1280.jpg" alt="Tecnologia no campo" class="imagem">
+</section>
+
+<section id="conclusao">
+    <h2>Conclusão</h2>
+    <p>A simulação mostra como a tecnologia pode ajudar produtores a monitorar o solo e tomar decisões mais conscientes. Ao observar a umidade, nitrogênio e fosfato, o agricultor pode melhorar a produtividade e preservar o meio ambiente, unindo produção e sustentabilidade.</p>
+    <img src="https://cdn.pixabay.com/photo/2016/04/01/09/02/farm-1308133_1280.jpg" alt="Agricultura sustentável" class="imagem">
+</section>
+
+<section id="referencias">
+    <h2>Referências</h2>
+    <ul>
+        <li>SILVA, João. <em>Agricultura sustentável</em>. São Paulo: Editora Exemplo, 2020.</li>
+        <li>BRASIL. Ministério da Agricultura. <em>Boas práticas de manejo do solo</em>. Brasília, 2019.</li>
+        <li><a href="http://www.agricultura.gov.br" target="_blank">www.agricultura.gov.br</a></li>
+        <li><a href="http://www.sustentabilidade.org" target="_blank">www.sustentabilidade.org</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>Projeto desenvolvido por Alexandre – Agrinho 2026</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
