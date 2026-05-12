@@ -1,24 +1,17 @@
-function verificarSolo() {
-    // Pega o valor digitado no campo de umidade
-    const umidade = document.getElementById('entrada-umidade').value;
-    const resultadoDiv = document.getElementById('resultado-simulacao');
-    
-    resultadoDiv.style.display = 'block';
+window.addEventListener('scroll', function() {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        const position = card.getBoundingClientRect().top;
+        if(position < window.innerHeight - 100) {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }
+    });
+});
 
-    if (umidade === "") {
-        resultadoDiv.innerHTML = "Por favor, digite um valor.";
-        resultadoDiv.style.backgroundColor = "#ffeb3b";
-    } else if (umidade >= 20 && umidade <= 40) {
-        resultadoDiv.innerHTML = "✅ Solo Ideal! A umidade está perfeita para o plantio.";
-        resultadoDiv.style.backgroundColor = "#c8e6c9";
-        resultadoDiv.style.color = "#2e7d32";
-    } else if (umidade < 20) {
-        resultadoDiv.innerHTML = "⚠️ Solo Seco! É necessário acionar a irrigação.";
-        resultadoDiv.style.backgroundColor = "#ffccbc";
-        resultadoDiv.style.color = "#d84315";
-    } else {
-        resultadoDiv.innerHTML = "🌊 Solo Encharcado! Cuidado com o apodrecimento das raízes.";
-        resultadoDiv.style.backgroundColor = "#bbdefb";
-        resultadoDiv.style.color = "#1565c0";
-    }
-}
+// Inicialização para os cards
+document.querySelectorAll('.card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transition = 'all 0.6s ease-out';
+    card.style.transform = 'translateY(20px)';
+});
