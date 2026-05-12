@@ -1,71 +1,68 @@
-/* Cores e Fontes */
 :root {
-    --verde-escuro: #1b5e20;
-    --verde-agrinho: #2e7d32;
-    --verde-claro: #e8f5e9;
-    --branco: #ffffff;
-    --cinza: #f4f7f4;
+    --primary: #2e7d32;
+    --secondary: #81c784;
+    --dark: #1b5e20;
+    --light: #f1f8e9;
+    --text: #333;
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    background-color: var(--cinza);
-    color: #333;
+    color: var(--text);
+    scroll-behavior: smooth;
+    background-color: #fff;
 }
 
-header {
-    background-color: var(--verde-agrinho);
-    color: var(--branco);
-    padding: 3rem 1rem;
+/* Hero Section (A entrada do site) */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 0 20px;
 }
 
-.container {
-    max-width: 900px;
-    margin: -30px auto 40px; /* Sobe um pouco o conteúdo para cima do header */
-    background: var(--branco);
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero p { font-size: 1.2rem; max-width: 600px; }
+
+/* Cards de Funcionalidades */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 10% ;
+    background-color: var(--light);
+}
+
+.card {
+    background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-h2 {
-    color: var(--verde-escuro);
-    border-left: 5px solid var(--verde-agrinho);
-    padding-left: 15px;
-    margin-top: 40px;
-}
-
-/* Tabela de Resultados */
-.tabela-container {
-    overflow-x: auto; /* Garante que a tabela não quebre no celular */
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th {
-    background-color: var(--verde-agrinho);
-    color: white;
-    padding: 12px;
-}
-
-td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Efeito Interativo no Script */
-.alerta-solo {
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 10px;
-    font-weight: bold;
     text-align: center;
-    display: none; /* Começa escondido */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); }
+.card h3 { color: var(--primary); }
+
+/* Seção Sobre */
+.about { padding: 80px 15%; text-align: center; }
+
+.btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
 }
