@@ -3,91 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Agrinho 2026 - Alexandre</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f7f4; }
-        header { background-color: #2e7d32; color: white; padding: 2rem; text-align: center; }
-        nav { background: #1b5e20; padding: 10px; text-align: center; position: sticky; top: 0; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .container { max-width: 900px; margin: 20px auto; background: white; padding: 40px; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
-        h1 { margin-top: 0; }
-        h2 { color: #2e7d32; border-bottom: 2px solid #2e7d32; padding-bottom: 5px; margin-top: 30px; }
-        .info-capa { background: #e8f5e9; padding: 20px; border-radius: 5px; border-left: 5px solid #2e7d32; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        table, th, td { border: 1px solid #ddd; }
-        th, td { padding: 12px; text-align: left; }
-        th { background-color: #2e7d32; color: white; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9rem; }
-    </style>
+    <title>AgroTech - Monitoramento Inteligente</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Aplicativo de Monitoramento para Sustentabilidade no Campo</h1>
-    <p>Feira Agrinho 2026 - Colégio Estadual Cívico Militar Manoel</p>
-</header>
-
-<nav>
-    <a href="#introducao">Introdução</a>
-    <a href="#objetivos">Objetivos</a>
-    <a href="#metodologia">Metodologia</a>
-    <a href="#resultados">Resultados</a>
-</nav>
-
-<div class="container">
-    <section class="info-capa">
-        <p><strong>Estudante:</strong> Alexandre (1° C)</p>
-        <p><strong>Professor Orientador:</strong> Thalles Felipe Horn</p>
-        <p><strong>Local:</strong> Guarapuava - Paraná</p>
+    <section class="hero">
+        <h1>Monitoramento Sustentável no Campo</h1>
+        <p>Inovação tecnológica para a Feira Agrinho 2026. Facilitando a vida do produtor rural em Guarapuava.</p>
+        <br>
+        <a href="#sobre" class="btn">Conheça o Projeto</a>
     </section>
 
-    <section id="introducao">
-        <h2>1. Introdução</h2>
-        <p>O projeto busca desenvolver uma ferramenta tecnológica que auxilia os produtores a acompanhar o solo de forma mais prática e eficiente. O aplicativo monitora a água presente no solo, a qualidade do solo e os minerais essenciais para o cultivo.</p>
-        
-        <h3>Problema de Pesquisa</h3>
-        <p><em>Como saber se o solo está pronto para a produção de um jeito mais simples do que o convencional?</em></p>
+    <section id="sobre" class="about">
+        <h2>O que é o projeto?</h2>
+        <p>Desenvolvido por <strong>Alexandre</strong>, sob orientação de <strong>Thalles Felipe Horn</strong>, este aplicativo une sensores de alta precisão com uma interface simples para monitorar a saúde do solo em tempo real.</p>
     </section>
 
-    <section id="objetivos">
-        <h2>2. Objetivos</h2>
-        <p><strong>Objetivo Geral:</strong> Investigar estratégias que promovam o equilíbrio entre produção agrícola e preservação ambiental por meio de um aplicativo de monitoramento do solo.</p>
-        <ul>
-            <li>Pesquisar práticas agrícolas sustentáveis.</li>
-            <li>Desenvolver um protótipo de aplicativo funcional.</li>
-            <li>Testar a eficiência no monitoramento de água e minerais.</li>
-        </ul>
+    <section class="features">
+        <div class="card">
+            <h3>💧 Umidade</h3>
+            <p>Saiba exatamente quando irrigar, evitando o desperdício de água e preservando os recursos naturais.</p>
+        </div>
+        <div class="card">
+            <h3>🧪 Minerais</h3>
+            <p>Monitoramento de nitrogênio e fósforo para uma adubação precisa e eficiente.</p>
+        </div>
+        <div class="card">
+            <h3>📊 Sustentabilidade</h3>
+            <p>Dados reais que ajudam a equilibrar a produção agrícola com a preservação ambiental.</p>
+        </div>
     </section>
 
-    <section id="justificativa">
-        <h2>3. Justificativa</h2>
-        <p>Este projeto apresenta soluções tecnológicas que facilitam a agricultura sustentável. Ambientalmente, contribui para a preservação do solo e da água, incentivando práticas responsáveis no campo.</p>
-    </section>
+    <footer style="text-align: center; padding: 40px; background: #333; color: white;">
+        <p>Colégio Estadual Cívico Militar Manoel - Guarapuava/PR</p>
+        <p>Agrinho 2026 - Tecnologia a serviço do campo.</p>
+    </footer>
 
-    <section id="metodologia">
-        <h2>4. Metodologia</h2>
-        <p>O trabalho foi dividido em etapas de pesquisa bibliográfica, desenvolvimento do protótipo com sensores de umidade e testes em campo. Utilizamos computadores, softwares de programação e sensores para coleta de dados reais.</p>
-    </section>
-
-    <section id="resultados">
-        <h2>5. Resultados</h2>
-        <p>Abaixo, apresentamos os dados coletados durante os testes em diferentes áreas:</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Área de Teste</th>
-                    <th>Umidade (%)</th>
-                    <th>Nitrogênio (mg/kg)</th>
-                    <th>Resultado do Solo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Área 1</td>
-                    <td>22%</td>
-                    <td>15</td>
-                    <td>Pronto para plantio</td>
-                </tr>
-                <tr>
-                    <td>Área 2</td>
+    <script src="script.js"></script>
+</body>
+</html>
